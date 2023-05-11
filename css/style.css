@@ -1,0 +1,521 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #fff;
+}
+
+body{
+    min-height: 1000px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+
+}
+
+.banner .content h1{
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff ;
+    background-color: orange;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s ;
+
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0,0.05);
+}
+
+header .logo{
+    color: orange;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: orange;
+}
+
+header .logo span{
+    color: #000;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: orange;
+    font-weight: 300;
+}
+
+.btn_log {
+    font-size: 1em;
+    color: #fff ;
+    background-color: orange;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s ;
+
+}
+
+.btn_log:hover{
+    letter-spacing: 6px;
+
+}
+
+header.sticky .navigation li a{
+    color: #000;
+
+}
+header.sticky .navigation li a:hover{
+    color: orange;
+}
+
+header .navigation li a:hover{
+    color: #fff;
+}
+
+section{
+    padding: 100px;
+
+}
+
+section p{
+    margin-top: 10px;
+    color: #000;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.titletext{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titletext span{
+    color: orange;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec{
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content2{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+p{
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.services{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+    
+    
+}
+
+.services .box {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    color: rgb(255, 165, 0);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.services .box a{
+    text-decoration: none;
+    color: rgba(255,165,0);
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.services .box:hover a{
+    color: rgba(0,0,0,1);
+}
+
+.services .box:hover{
+    background-color: rgb(211, 211, 209);
+    /*cursor: pointer;*/
+
+}
+
+.services .box .iconBx{
+    margin-top: 25px;
+}
+
+.services .box .iconBx img{
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.services .box h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.stats{
+    background: #000;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.stats h3, .stats p{
+    color:#fff;
+}
+
+.statsBox{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.statsBox h2{
+    color:orange;
+    font-size: 36px;
+}
+
+.statsBox h4{
+    color: orange;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.pracBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.pracBx .type{
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pracBx .type .imgBx{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pracBx .type .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pracBx .type .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.pracBx .type .details:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.pracBx .type .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.pracBx .type .details h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.achBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.achBx .ach{
+    position: relative;
+    background-color: rgb(211, 211, 209);
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achBx .ach:hover{
+    background: #000;
+}
+
+.achBx .ach a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.achBx .ach:hover a{
+    color: rgba(255,255,255,1);
+}
+
+.help{
+    background: #000;
+    
+}
+
+.help h3,.help p{
+    color: #fff;
+}
+
+.helpform{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.helpform form{
+    width: 100%;
+}
+
+.helpform .row100{
+    display: flex;
+    width: 100%;
+}
+
+.helpform .row100 .inputBx50{
+    width: 50%;
+    margin: 0 20px;
+
+}
+.helpform .row100 .inputBx50{
+    width: 100%;
+    margin: 0 20px;
+
+}
+
+.helpform .row100 input,.helpform .row100 textarea{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    padding-top: 10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+}
+
+.helpform .row100 textarea{
+    height: 100px;
+}
+
+.helpform .row100 input::placeholder,.helpform .row100 textarea::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+.sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.sci ul{
+    display: flex;
+}
+
+.sci ul li{
+    list-style: none;
+}
+
+.sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.sci ul li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+
+.sci ul li a:hover img{
+    opacity: 0.5;
+}
+
+.copyright{
+    color: #fff;
+}
+
+
+
+
